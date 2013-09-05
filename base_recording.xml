@@ -37,7 +37,7 @@
         <!-- shows the title and the plot of the selected video -->
         <textarea name="title" from="base_textarea">
             <area>420,15,550,30</area>
-            <scroll direction="horizontal" />
+            <scroll direction="horizontal" rate="35" />
             <font>title</font>
         </textarea>
         <textarea name="subtitle" from="base_textarea">
@@ -68,7 +68,7 @@
         <textarea name="description" from="base_textarea">
             <area>420,125,805,108</area>
             <multiline>yes</multiline>
-            <scroll direction="vertical"/>
+            <scroll direction="vertical" rate="10" />
             <align>left,top</align>
             <template>%"|SUBTITLE|" %%(|ORIGINALAIRDATE|) %%(|STARS|) %%DESCRIPTION%</template>
         </textarea>
@@ -270,6 +270,12 @@
             <state name="hd1080">
                 <imagetype name="hd1080" from="base_icon_selected">
                     <filename>images/icons/video/hdtv_1080.png</filename>
+                    <area>0,0,44,33</area>
+                </imagetype>
+            </state>
+            <state name="damaged">
+                <imagetype name="damaged" from="base_icon_selected">
+                    <filename>images/icons/video/damaged.png</filename>
                     <area>0,0,44,33</area>
                 </imagetype>
             </state>
